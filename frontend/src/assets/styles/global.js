@@ -14,6 +14,11 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
     }
 
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     body {
         font-family: 'PoppinsRegular';
         background-color: ${(props) => props.theme.background};

@@ -12,10 +12,10 @@ export default function DesktopMenu(){
                 <SiBuymeacoffee />
                 <h1>GetYourCoffee</h1>
             </div>
-            <ThemeBtn />
-            <UserBtn />
+            <div>
+                <ThemeBtn />
+                <UserBtn />
+            </div>
         </Container>
     );
 }
-
-{/* Building the menu structure */}
