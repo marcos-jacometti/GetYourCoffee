@@ -4,15 +4,15 @@ import { CoffeeContainer } from "./style";
 import { SiBuymeacoffee } from "react-icons/si";
 import Button from "../../common/button";
 
-export default function CoffeeCard(){
+export default function CoffeeCard({title, description}){
     return(
         <CoffeeContainer>
             <div><SiBuymeacoffee /></div>
             <div>
-                <h2>Espresso</h2>
-                <h4>A strong, concentrated coffee shot with a rich flavor and creamy top layer</h4>
+                <h2>{title}</h2>
+                <h4>{description}</h4>
             </div>
-            <Button />
+            <Button link="/shopping" title="GET"/>
         </CoffeeContainer>
     );
 }

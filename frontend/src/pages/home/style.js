@@ -5,7 +5,8 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: 110vh;
+    color: ${(props) => props.theme.color};
 `;
 
 export const CardsContainer = styled.div`
@@ -15,4 +16,5 @@ export const CardsContainer = styled.div`
     flex-wrap: wrap;
     gap: 3vh;
     width: 80%;
+    padding: 1rem;
 `;

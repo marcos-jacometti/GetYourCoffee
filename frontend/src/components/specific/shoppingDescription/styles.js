@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const ShoppingContainer = styled.div`
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    height: 10vh;
-    box-shadow: ${(props) => props.theme.boxShadow};
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
 
     div {
         padding: 1.5rem;
@@ -18,9 +17,5 @@ export const Container = styled.div`
             fill: ${(props) => props.theme.fill};
             font-size: 1.4vw;
         }
-    }
-
-    .link-styled {
-        text-decoration: none;
     }
 `;

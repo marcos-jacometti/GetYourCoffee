@@ -1,20 +1,21 @@
 import React from "react";
 import { Container } from "./style";
+import { Link } from "react-router-dom";
 
 import { SiBuymeacoffee } from "react-icons/si";
 import ThemeBtn from "../components/btnTheme";
-import UserBtn from "../components/btnUser";
 
 export default function DesktopMenu(){
     return(
         <Container>
-            <div>
-                <SiBuymeacoffee />
-                <h1>GetYourCoffee</h1>
-            </div>
+            <Link to="/" className="link-styled">
+                <div>
+                    <SiBuymeacoffee />
+                    <h1>GetYourCoffee</h1>
+                </div>
+            </Link>
             <div>
                 <ThemeBtn />
-                <UserBtn />
             </div>
         </Container>
     );

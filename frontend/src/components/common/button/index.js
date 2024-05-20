@@ -1,10 +1,13 @@
 import React from "react";
 import { BtnContainer } from "./style";
+import { Link } from "react-router-dom";
 
-export default function Button(){
+export default function Button({link, onClickFunction, title}){
     return(
         <BtnContainer>
-           <button>Buy</button>
+            <Link to={link}>
+                <button onClick={onClickFunction}>{title}</button>
+            </Link>
         </BtnContainer>
     );
 }
