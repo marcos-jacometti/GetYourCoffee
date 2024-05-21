@@ -5,7 +5,6 @@ export const ShoppingContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 90vh;
 
     div {
         padding: 1.5rem;

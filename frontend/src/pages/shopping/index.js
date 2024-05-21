@@ -10,6 +10,9 @@ export default function ShoppingCard(){
             <HeaderContainer />
             <ShoppingContainer>
                 <ShoppingDescription />
+                <div>
+                    <h2>Fill your informations:</h2>
+                </div>
             </ShoppingContainer>
         </>
     );

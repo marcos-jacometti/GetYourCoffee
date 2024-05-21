@@ -12,7 +12,7 @@ export default function CoffeeCard({title, description}){
                 <h2>{title}</h2>
                 <h4>{description}</h4>
             </div>
-            <Button link="/shopping" title="GET"/>
+            <Button link="/shopping" title="GET" state={{title, description}}/>
         </CoffeeContainer>
     );
 }
