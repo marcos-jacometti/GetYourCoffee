@@ -5,11 +5,12 @@ export const ShoppingContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 20vw;
+    height: 15vh;
 
     div {
-        padding: 1.5rem;
+        text-align: center;
         display: flex;
-        align-items: center;
         color: ${(props) => props.theme.color};
 
         svg {
