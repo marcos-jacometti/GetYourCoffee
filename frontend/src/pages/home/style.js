@@ -5,7 +5,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 110vh;
+    height: 92vh;
     color: ${(props) => props.theme.color};
 `;
 

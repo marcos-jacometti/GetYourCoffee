@@ -6,7 +6,7 @@ export const CoffeeContainer = styled.div`
     justify-content: center;
     flex-direction: column;
     width: 18vw;
-    height: 45vh;
+    height: 40vh;
     border-radius: 0.5vh;
     box-shadow: ${(props) => props.theme.boxShadow};
 
@@ -18,7 +18,7 @@ export const CoffeeContainer = styled.div`
     }
 
     svg {
-        font-size: 15vh;
+        font-size: 10vh;
         fill: ${(props) => props.theme.fill};
     }
 `;

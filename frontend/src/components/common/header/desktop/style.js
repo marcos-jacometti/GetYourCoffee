@@ -5,7 +5,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 100vw;
-    height: 10vh;
+    height: 8vh;
     box-shadow: ${(props) => props.theme.boxShadow};
 
     div {

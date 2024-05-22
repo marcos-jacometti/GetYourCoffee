@@ -4,6 +4,7 @@ export const BtnContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 1vw;
 
     :hover {
             box-shadow: ${(props) => props.theme.boxShadow};

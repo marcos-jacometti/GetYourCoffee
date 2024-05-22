@@ -5,7 +5,7 @@ export const ShoppingContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 90vh;
+    height: 92vh;
     color: ${(props) => props.theme.color};
 `;
 
