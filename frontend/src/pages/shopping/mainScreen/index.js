@@ -15,7 +15,7 @@ export default function MainScreen(){
                 <ShoppingDescription />
                 <Inputs id="result">
                     <h2>Fill your informations:</h2>
-                    <Input icon={<FaUserAlt />} type="text" id="" placeholder="Your Name"/>
+                    <Input icon={<FaUserAlt />} type="text" id="" placeholder="Your Name" />
                     <Input icon={<FaPhoneAlt />} type="number" id="" placeholder="Your Phone"/>
                     <Input icon={<FaStreetView />} type="text" id="code" onBlur={getCep} placeholder="Your Street Code"/>
                     <Input icon={<FaCity />} type="text" id="city" placeholder="Your City" />
