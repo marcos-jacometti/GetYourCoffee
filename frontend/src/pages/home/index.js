@@ -1,28 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import HeaderContainer from "../../components/common/header";
 import CoffeeCard from "../../components/specific/coffeeCards";
 import { CardsContainer, Container } from "./style";
 
-//Backend
-import axios from 'axios';
-
 export default function Home(){
-    const [message, setMessage] = useState('');
-
-    useEffect(() => {
-        axios.get('http://localhost:5000/api/hello')
-        .then(response => {
-            setMessage(response.data.message);
-        })
-        .catch(error => {
-            console.error('Erro', error)
-        })
-    }, []);
     return(
         <>
             <HeaderContainer />
             <Container>
-                <h2>{message}</h2>
+                <h2>Get your free coffee</h2>
                 <CardsContainer>
                     <CoffeeCard title="Espresso" description="Strong, concentrated coffee made by forcing hot water through finely-ground beans." />
                     <CoffeeCard title="Americano" description="Espresso diluted with hot water, offering a similar strength to drip coffee." />
