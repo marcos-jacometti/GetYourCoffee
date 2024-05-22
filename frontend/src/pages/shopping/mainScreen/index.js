@@ -5,7 +5,7 @@ import ShoppingDescription from "../../../components/specific/shoppingDescriptio
 import Input from "../../../components/common/input";
 import Button from "../../../components/common/button/index";
 import { FaUserAlt, FaPhoneAlt, FaStreetView, FaCity, FaAddressBook } from "react-icons/fa";
-import script, { getCep } from "../../../services/script";
+import { getCep } from "../../../services/script";
 
 export default function MainScreen(){
     return(
@@ -13,10 +13,10 @@ export default function MainScreen(){
             <HeaderContainer />
             <ShoppingContainer>
                 <ShoppingDescription />
-                <Inputs id="result">
+                <Inputs>
                     <h2>Fill your informations:</h2>
                     <Input icon={<FaUserAlt />} type="text" id="" placeholder="Your Name" />
-                    <Input icon={<FaPhoneAlt />} type="number" id="" placeholder="Your Phone"/>
+                    <Input icon={<FaPhoneAlt />} type="text" id="" placeholder="Your Phone"/>
                     <Input icon={<FaStreetView />} type="text" id="code" onBlur={getCep} placeholder="Your Street Code"/>
                     <Input icon={<FaCity />} type="text" id="city" placeholder="Your City" />
                     <Input icon={<FaAddressBook />} type="text" id="address" placeholder="Your Address" />
@@ -26,3 +26,4 @@ export default function MainScreen(){
         </>
     );
 }
+
