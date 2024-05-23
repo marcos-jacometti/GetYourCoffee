@@ -1,18 +1,23 @@
 import React from "react";
-import { CoffeeContainer } from "./style";
+import { CoffeeContainer, DescriptionContainer, ImageContainer } from "./style";
 
 import { SiBuymeacoffee } from "react-icons/si";
 import Button from "../../common/button";
 
-export default function CoffeeCard({title, description}){
+export default function CoffeeCard({background, title, description, reverse}){
     return(
-        <CoffeeContainer>
-            <div><SiBuymeacoffee /></div>
-            <div>
-                <h2>{title}</h2>
-                <h4>{description}</h4>
-            </div>
-            <Button link="/shopping" title="GET" state={{title, description}}/>
+        <CoffeeContainer $reverse={reverse}>
+            <ImageContainer $background={background}/>
+            <DescriptionContainer>
+                <div>
+                    <SiBuymeacoffee />
+                    <h1>{title}</h1>
+                </div>
+                <div>
+                    <h3>{description}</h3>
+                </div>
+                <Button link="/shopping" title="GET" state={{title, description}}/>
+            </DescriptionContainer>
         </CoffeeContainer>
     );
 }

@@ -17,9 +17,9 @@ export default function ShoppingDescription(){
         <ShoppingContainer>
             <div>
                 <SiBuymeacoffee />
-                <h2>{title}</h2>
             </div>
             <div>
+                <h2>{title}</h2>
                 <h4>{description}</h4>
             </div>
         </ShoppingContainer>

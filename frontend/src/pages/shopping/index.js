@@ -8,7 +8,7 @@ export default function ShoppingCard(){
         setLoading(true)
         setTimeout(() => {
             setLoading(false);
-        }, 10000);
+        }, 5000);
     }, []);
 
     return(

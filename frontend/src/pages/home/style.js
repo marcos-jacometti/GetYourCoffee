@@ -5,8 +5,8 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 92vh;
     color: ${(props) => props.theme.color};
+    padding: 1rem;
 `;
 
 export const CardsContainer = styled.div`
@@ -14,7 +14,6 @@ export const CardsContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3vh;
-    width: 80%;
-    padding: 1rem;
+    gap: 1.5vh;
+    width: 100vw;
 `;
