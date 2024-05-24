@@ -21,8 +21,7 @@ export const CoffeeContainer = styled.div`
 export const ImageContainer = styled.div`
     height: 100%;
     width: 45vw;
-    background-image: url(${(props) => props.$background});
-    background-size: cover;
+    background: url(${(props) => props.$background}) center / cover;
 `;
 
 export const DescriptionContainer = styled.div`

@@ -5,9 +5,10 @@ export const ShoppingContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 25%;
-    height: 100%;
-    box-shadow: 5px 0 5px -5px #000;
+    width: 50vw;
+    height: 90%;
+    background: url(${(props) => props.$background}) center / cover;
+    box-shadow: ${(props) => props.theme.boxShadow};
 
     div {
         display: flex;
@@ -15,9 +16,10 @@ export const ShoppingContainer = styled.div`
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        color: ${(props) => props.theme.color};
+        color: #fff;
         height: 30%;
-        width: 80%;
+        width: 50%;
+        text-shadow: 3px 3px 5px #000;
 
         svg {
             fill: ${(props) => props.theme.fill};

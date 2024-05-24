@@ -16,7 +16,7 @@ export default function CoffeeCard({background, title, description, reverse}){
                 <div>
                     <h3>{description}</h3>
                 </div>
-                <Button link="/shopping" title="GET" state={{title, description}}/>
+                <Button link="/shopping" title="GET" state={{title, description, background}}/>
             </DescriptionContainer>
         </CoffeeContainer>
     );

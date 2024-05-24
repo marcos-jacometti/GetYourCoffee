@@ -12,15 +12,13 @@ export default function ShoppingDescription(){
     const query = useQuery();
     const title = query.get("title") || "Default";
     const description = query.get("description") || "Default";
+    const background = query.get("background") || "Default" 
 
     return(
-        <ShoppingContainer>
+        <ShoppingContainer $background={background}>
             <div>
-                <SiBuymeacoffee />
-            </div>
-            <div>
-                <h2>{title}</h2>
-                <h4>{description}</h4>
+                <h1>{title}</h1>
+                <h2>{description}</h2>
             </div>
         </ShoppingContainer>
     );

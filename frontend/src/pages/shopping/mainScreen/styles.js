@@ -12,7 +12,7 @@ export const Inputs = styled.div`
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 75%;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     text-align: center;
