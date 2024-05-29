@@ -6,6 +6,7 @@ import Input from "../../../components/common/input";
 import Button from "../../../components/common/button/index";
 import { FaUserAlt, FaPhoneAlt, FaStreetView, FaCity, FaAddressBook } from "react-icons/fa";
 import { getCep } from "../../../services/script";
+import { handleCreateOrder } from "../../../services/orderServices";
 
 export default function MainScreen(){
     return(
@@ -15,12 +16,12 @@ export default function MainScreen(){
                 <ShoppingDescription />
                 <Inputs>
                     <h2>Fill your informations:</h2>
-                    <Input icon={<FaUserAlt />} type="text" id="" placeholder="Your Name" />
-                    <Input icon={<FaPhoneAlt />} type="text" id="" placeholder="Your Phone"/>
+                    <Input icon={<FaUserAlt />} type="text" id="name" placeholder="Your Name" />
+                    <Input icon={<FaPhoneAlt />} type="text" id="phone" placeholder="Your Phone"/>
                     <Input icon={<FaStreetView />} type="text" id="code" onBlur={getCep} placeholder="Your Street Code"/>
                     <Input icon={<FaCity />} type="text" id="city" placeholder="Your City" />
-                    <Input icon={<FaAddressBook />} type="text" id="address" placeholder="Your Address" />
-                    <Button title="GET"/>
+                    <Input icon={<FaAddressBook />} type="text" id="street" placeholder="Your Address" />
+                    <Button title="GET" onClick={handleCreateOrder}/>
                 </Inputs>
             </ShoppingContainer>
         </>

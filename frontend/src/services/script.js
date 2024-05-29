@@ -1,5 +1,5 @@
 const city = document.getElementById("city");
-const address = document.getElementById("address");
+const street = document.getElementById("street");
 
 export function getCep(){
     const codeElement = document.getElementById("code");
@@ -20,8 +20,8 @@ async function cepAddress(cep){
 }
 
 function getData(data){
-    if(city && address) {
+    if(city && street) {
         city.value = data.localidade || '';
-        address.value = data.logradouro || '';
+        street.value = data.logradouro || '';
     }
 }
