@@ -21,7 +21,7 @@ export default function MainScreen(){
                     <Input icon={<FaStreetView />} type="text" id="code" onBlur={getCep} placeholder="Your Street Code"/>
                     <Input icon={<FaCity />} type="text" id="city" placeholder="Your City" />
                     <Input icon={<FaAddressBook />} type="text" id="street" placeholder="Your Address" />
-                    <Button title="GET" onClick={handleCreateOrder}/>
+                    <Button title="GET" onClick={handleCreateOrder} link="/"/>
                 </Inputs>
             </ShoppingContainer>
         </>

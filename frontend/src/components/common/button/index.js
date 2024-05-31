@@ -6,9 +6,11 @@ export default function Button({link, title, state, onClick}){
     const query = new URLSearchParams(state).toString();
     return(
         <BtnContainer>
-            <Link to={`${link}?${query}`}>
-                <button onClick={onClick}>{title}</button>
-            </Link>
+            <button onClick={onClick}>
+                <Link to={`${link}?${query}`} className="link">
+                    {title}
+                </Link>
+            </button>
         </BtnContainer>
     );
 }

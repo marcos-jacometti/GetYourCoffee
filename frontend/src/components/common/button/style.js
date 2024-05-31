@@ -19,5 +19,11 @@ export const BtnContainer = styled.div`
         font-size: 20px;
         font-weight: bold;
         cursor: pointer;
+
+        .link {
+            text-decoration: none;
+            color: inherit;
+            box-shadow: none;
+        }
     }
 `;
