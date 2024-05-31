@@ -6,7 +6,7 @@ import Input from "../../../components/common/input";
 import Button from "../../../components/common/button/index";
 import { FaUserAlt, FaPhoneAlt, FaStreetView, FaCity, FaAddressBook } from "react-icons/fa";
 import { getCep } from "../../../services/api/script";
-import { handleCreateOrder } from "../../../services/controllers/orderControllers";
+import { handleCreateOrder } from "../../../services/controllers/handleCreateOrder";
 
 export default function MainScreen(){
     return(
@@ -21,7 +21,7 @@ export default function MainScreen(){
                     <Input icon={<FaStreetView />} type="text" id="code" onBlur={getCep} placeholder="Your Street Code"/>
                     <Input icon={<FaCity />} type="text" id="city" placeholder="Your City" />
                     <Input icon={<FaAddressBook />} type="text" id="street" placeholder="Your Address" />
-                    <Button title="GET" onClick={handleCreateOrder} link="/"/>
+                    <Button title="GET" onClick={handleCreateOrder} link="#"/>
                 </Inputs>
             </ShoppingContainer>
         </>

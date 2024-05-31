@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import { darkTheme } from "./assets/styles/toggle/darkTheme";
 import { lightTheme } from "./assets/styles/toggle/lightTheme";
 import AppRoutes from "../src/routes/Routes";
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   const [mode, setMode] = useState(false);
@@ -13,6 +14,7 @@ function App() {
       <ThemeProvider theme={mode ? darkTheme : lightTheme}>
         <GlobalStyle />
         <AppRoutes />
+        <ToastContainer />
       </ThemeProvider>
     </themeContext.Provider>
   );

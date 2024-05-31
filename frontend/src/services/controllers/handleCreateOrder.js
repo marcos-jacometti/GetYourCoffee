@@ -1,4 +1,5 @@
 import axios from "axios";
+import { toast } from "react-toastify";
 
 export const handleCreateOrder = async () => {
     try {
@@ -8,23 +9,25 @@ export const handleCreateOrder = async () => {
         const city = document.getElementById("city").value;
         const street = document.getElementById("street").value;
 
-        const response = await axios.post("http://localhost:3000/createOrder", {
-            name: name,
-            phone: phone,
-            code: code,
-            city: city,
-            street: street
+        const response = await axios.post("http://localhost:3000/orders/createOrder", {
+            name,
+            phone,
+            code,
+            city,
+            street
         });
 
-        console.log(response.data); // Get the data base answer
+        console.log(response.data);
 
-        // Clean the inputs values after send to db
         document.getElementById("name").value = "";
         document.getElementById("phone").value = "";
         document.getElementById("code").value = "";
         document.getElementById("city").value = "";
         document.getElementById("street").value = "";
+
+        toast.success("Order was created successfully!");
     } catch (error) {
-        console.error(error);
+        console.error("Error creating order:", error);
+        toast.error("Failed to create order!");
     }
 };

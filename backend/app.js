@@ -1,18 +1,20 @@
 const express = require('express');
+const cors = require('cors');
 const { dbConnection } = require('./db/dbConnection');
 const orderController = require('./controllers/orderControllers');
 
 const app = express();
+app.use(cors());
 
 app.use(express.json());
 
 dbConnection.connect((err) => {
     if (err) {
-      console.error(err);
-      return;
+        console.error('Database connection failed:', err);
+        return;
     }
-    console.log("Connection was a success");
-  });
+    console.log("Connected to the database successfully");
+});
 
 app.use('/orders', orderController);
 
@@ -22,5 +24,5 @@ app.get('/', (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(`Server running ${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
