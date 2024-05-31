@@ -5,8 +5,8 @@ import ShoppingDescription from "../../../components/specific/shoppingDescriptio
 import Input from "../../../components/common/input";
 import Button from "../../../components/common/button/index";
 import { FaUserAlt, FaPhoneAlt, FaStreetView, FaCity, FaAddressBook } from "react-icons/fa";
-import { getCep } from "../../../services/script";
-import { handleCreateOrder } from "../../../services/orderServices";
+import { getCep } from "../../../services/api/script";
+import { handleCreateOrder } from "../../../services/controllers/orderControllers";
 
 export default function MainScreen(){
     return(
