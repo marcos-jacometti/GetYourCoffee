@@ -1,5 +1,4 @@
 import axios from "axios";
-import { toast } from "react-toastify";
 
 export const handleCreateOrder = async () => {
     try {
@@ -24,10 +23,7 @@ export const handleCreateOrder = async () => {
         document.getElementById("code").value = "";
         document.getElementById("city").value = "";
         document.getElementById("street").value = "";
-
-        toast.success("Order was created successfully!");
     } catch (error) {
         console.error("Error creating order:", error);
-        toast.error("Failed to create order!");
     }
 };

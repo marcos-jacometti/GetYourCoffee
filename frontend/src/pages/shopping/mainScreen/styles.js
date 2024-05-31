@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ToastContainer } from "react-toastify";
 
 export const ShoppingContainer = styled.div`
     display: flex;
@@ -17,4 +18,14 @@ export const Inputs = styled.div`
     flex-direction: column;
     text-align: center;
     gap: 1.5vh;
+`;
+
+export const StyledToast = styled(ToastContainer)`
+    &&&.Toastify__toast-container {
+        width: 20vw;
+    }
+    .Toastify__toast {
+        background: ${(props) => props.theme.background};
+        color: ${(props) => props.theme.color};
+    }
 `;
