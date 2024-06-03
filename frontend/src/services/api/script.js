@@ -1,27 +1,51 @@
-const city = document.getElementById("city");
-const street = document.getElementById("street");
-
-export function getCep(){
-    const codeElement = document.getElementById("code");
-    if(codeElement) {
-        const cep = codeElement.value.replace(/\D/g, '');
-        cepAddress(cep);
-    }
+// Function debounce to limit the frequency of calls to API
+function debounce(func, delay) {
+    let timeout;
+    return function(...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), delay);
+    };
 }
 
-async function cepAddress(cep){
+// Funcion to get the address using CEP
+async function cepAddress(cep, callback) {
     try {
         const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
         const data = await response.json();
-        getData(data);
+        callback(data);
     } catch (error) {
-        console.error(error);
+        console.error('Erro ao buscar o endereço:', error);
     }
 }
 
-function getData(data){
-    if(city && street) {
+// Function debounce applicated to find the address
+const debouncedCepAddress = debounce(cepAddress, 300);
+
+export function getCep() {
+    const codeElement = document.getElementById("code");
+    if (codeElement) {
+        const cep = codeElement.value.replace(/\D/g, '');
+        if (cep.length === 8) {
+            debouncedCepAddress(cep, getData);
+        }
+    }
+}
+
+// Function to update the city and street
+function getData(data) {
+    const city = document.getElementById("city");
+    const street = document.getElementById("street");
+
+    if (city && street) {
         city.value = data.localidade || '';
         street.value = data.logradouro || '';
     }
 }
+
+// Event listener to the CEP
+document.addEventListener("DOMContentLoaded", function() {
+    const codeElement = document.getElementById("code");
+    if (codeElement) {
+        codeElement.addEventListener('input', getCep);
+    }
+});
