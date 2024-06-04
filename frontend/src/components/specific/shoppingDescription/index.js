@@ -2,8 +2,6 @@ import React from "react";
 import { ShoppingContainer } from "./styles";
 import { useLocation } from "react-router-dom";
 
-import { SiBuymeacoffee } from "react-icons/si";
-
 function useQuery(){
     return new URLSearchParams(useLocation().search);
 }
