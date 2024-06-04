@@ -14,7 +14,7 @@ async function cepAddress(cep, callback) {
         const data = await response.json();
         callback(data);
     } catch (error) {
-        console.error('Erro ao buscar o endereço:', error);
+        console.error('Error to find address:', error);
     }
 }
 
