@@ -1,10 +1,15 @@
+# Get Your Free Coffee
+![GitHub top language](https://img.shields.io/github/languages/top/marcos-jacometti/GetYourCoffee)
+![GitHub repo size](https://img.shields.io/github/repo-size/marcos-jacometti/GetYourCoffee)
+![GitHub last commit](https://img.shields.io/github/last-commit/marcos-jacometti/GetYourCoffee)
+
 ## What is GetYourCoffee?
 
 Get your free coffee here, this project was build to improve some programming concepts I needed to practice. So, you've to choose your coffee (we have 10 options of coffee) and fill your informations (name, phone number and address). Then, the system will create an order in the data base with your coffee and informations! It's a simple project, but a nice way to practice important concecpts. I'll explain how it works and tell you how you can use it!
 
 Before, let's go take a look on GetYourCoffee:
 
-[[![alt text](2024-06-04-11-49-00.gif)](https://github.com/marcos-jacometti/GetYourCoffee/blob/main/frontend/src/assets/images/2024-06-04-11-49-00.gif)](https://github.com/marcos-jacometti/GetYourCoffee/blob/main/frontend/src/assets/images/2024-06-04-11-49-00.gif)
+<img src="frontend/src/assets/images/2024-06-04-11-49-00.gif">
 
 As you can see, there are two themes (light and black), there is a coffee list with description of each other. When you click on the button ("get") the system will take you to the shopping page, you'll put your informations there and wait for the coffee.
 
@@ -85,6 +90,6 @@ If you want to send me a message to a nice talk, fell free to contact me!
 - Email: [Marcos Jacometti](marcosjacometti10@gmail.com)
 - LinkedIn: [Marcos Jacometti](https://www.linkedin.com/in/marcos-vin%C3%ADcius-jacometti-675202202/)
 
-Thank you to enjoy the code! Let's pratcite and learn! ⚙️
+Thank you to enjoy the code! Let's practice and learn! ⚙️
 
 See you! 🌎
