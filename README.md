@@ -4,7 +4,7 @@ Get your free coffee here, this project was build to improve some programming co
 
 Before, let's go take a look on GetYourCoffee:
 
-![alt text](2024-06-04-11-49-00.gif)
+[![alt text](2024-06-04-11-49-00.gif)](https://github.com/marcos-jacometti/GetYourCoffee/blob/main/frontend/src/assets/images/2024-06-04-11-49-00.gif)
 
 As you can see, there are two themes (light and black), there is a coffee list with description of each other. When you click on the button ("get") the system will take you to the shopping page, you'll put your informations there and wait for the coffee.
 
