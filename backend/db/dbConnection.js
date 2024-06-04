@@ -30,7 +30,7 @@ dbConnection.connect((err) => {
         console.error(err);
         return;
     }
-    console.log("connection was a success");
+    console.log("dbconnection was a success");
 });
 
 module.exports = {connection, dbConnection};
